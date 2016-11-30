@@ -1,0 +1,130 @@
+/*preload*/
+#preload{
+	position:fixed;
+	width: 100%;
+	height: 100%;
+	z-index:3;
+}
+#coverImg {
+	width: 100%;
+	height:100%;
+	position:inherit;
+	z-index: 2;
+	opacity:0.8;
+} 
+.page{
+	background:white;
+	width:100%;
+	height:100%;
+}
+.water{
+	background:#29b5af;
+	transform: translate(0, 100%);
+	-webkit-transform: translate(0, 100%);
+}
+.water__wave_back{
+	fill: rgba(41, 181, 175, 0.47);
+}
+.water__wave_front{
+	fill:rgb(41, 181, 175); 
+}
+.percent {
+	color: #29b5af;
+	position: fixed;
+	top:70%; 
+	left: calc((100% - 82px) / 2);
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	font-weight: lighter;
+	z-index: 10;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	border-radius: 50%;
+	/* border: 1px solid #29b5af;*/
+}
+.cPulse{
+	-webkit-animation:pulse 0.5s infinite;
+};
+#loading {
+	display:inline-block;
+}
+#start{
+	display:inline-block;
+	font-size:20px;
+	color:#54c4bf;
+}
+.fa-spinner, .fa-power-off{
+	font-size:50px; 
+}
+.percent__sign {
+	display: inline-block;
+	font-size: 30px;
+}
+.rotateZ{
+	animation:rotateZ 3s infinite linear;
+	-webkit-animation:rotateZ 3s infinite linear;
+}
+
+@-webkit-keyframes rotateZ{
+	from{
+		transform:rotateZ(0deg);
+		-ms-transform:rotateZ(0deg);
+		-moz-transform:rotateZ(0deg);
+		-webkit-transform:rotateZ(0deg);
+	}to{
+		transform:rotateZ(360deg);
+		-webkit-transform:rotateZ(360deg);
+		-ms-transform:rotateZ(360deg);
+		-moz-transform:rotateZ(360deg);
+	}
+}
+
+
+/*light*/
+#light{
+	position:fixed;
+	width:100%;
+	height:100%;
+	background:url(../img/hd/bj.jpg) no-repeat center center;
+	background-size:100% 100%;
+	top:0px;
+	left:0px;
+}
+
+
+#black{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	background:rgba(0,0,0,0.9);
+	z-index:1;
+}
+#zhiwenImg{
+	position: absolute;
+	z-index: 2;
+	width: 15%;
+	left: 42.5%;
+	bottom: 15%;
+	display:block
+}
+
+#titleImg{
+	z-index:2;
+		position: absolute;
+			width: 30%;
+				left: 35%;
+					bottom: 4%;
+}

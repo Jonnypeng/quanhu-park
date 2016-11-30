@@ -1,0 +1,297 @@
+body {
+background: #eee;
+/*margin: 50px auto;*/
+padding: 0;
+}
+
+
+#wrapper {
+width: 960px;
+margin: 0 auto;
+}
+
+#wrapper {
+background:url(../img/kv-img/bg.jpg) no-repeat center center;
+background-size:100% 100%;
+top:0px;
+perspective: 0;
+-webkit-perspective:400;
+width: 100%;
+height:100%;
+position:fixed;
+	 perspective-origin: -50% 50%;
+	 -webkit-perspective-origin: -50% 50%;
+transition: perspective, 1s;
+	    -o-transition: -o-perspective, 1s;
+	    -moz-transition: -moz-perspective, 1s;
+	    -webkit-transition: -webkit-perspective, 1s;
+overflow:hidden;
+}
+
+/*#image:hover {
+  animation-play-state:paused;
+  -o-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -webkit-animation-play-state:paused;
+  }*/
+
+
+@-webkit-keyframes spin {
+	from {
+transform: rotateY(0);
+	   -o-transform: rotateY(0);
+	   -ms-transform: rotateY(0);
+	   -moz-transform: rotateY(0);
+	   -webkit-transform: rotateY(0);
+	}
+	to {
+transform: rotateY(-360deg);
+	   -o-transform: rotateY(-360deg);
+	   -ms-transform: rotateY(-360deg);
+	   -moz-transform: rotateY(-360deg);
+	   -webkit-transform: rotateY(-360deg);
+	}
+}
+
+#image {
+    margin: 0 auto;
+    /* height: 300px; */
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+   /* animation: spin 15s infinite linear ;
+    -moz-animation: spin 15s infinite linear ;
+    -o-animation: spin 15s infinite linear ;
+    -webkit-animation: spin 15s infinite linear ;*/
+    position: absolute;
+    top: 50%;
+}
+
+.image {
+position: absolute;
+height: auto;
+width: 102%;
+}
+
+#image > .i1 {
+position: absolute;
+    transform-style: preserve-3d;
+    width: 129px;
+    height: 1170px;
+    background-image: url(../img/kv-img/bg-team/背景1_01.png);
+    backface-visibility: hidden;
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+    display: block;
+}
+#image > .i2 {
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 129px;
+    height: 1170px;
+    background-image: url(../img/kv-img/bg-team/背景1_02.png);
+    backface-visibility: hidden;
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+    display: block;
+}
+#image > .i3 {
+position: absolute;
+    transform-style: preserve-3d;
+    width: 129px;
+    height: 1170px;
+    background-image: url(../img/kv-img/bg-team/背景1_03.png);
+    backface-visibility: hidden;
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+    display: block;
+}
+#image > .i4 {
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 129px;
+    height: 1170px;
+    background-image: url(../img/kv-img/bg-team/背景1_04.png);
+    backface-visibility: hidden;
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+    display: block;
+}
+#image > .i5 {
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 129px;
+    height: 1170px;
+    background-image: url(../img/kv-img/bg-team/背景1_05.png);
+    backface-visibility: hidden;
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+    display: block;
+}
+#image > .i6 {
+position: absolute;
+    transform-style: preserve-3d;
+    width: 129px;
+    height: 1170px;
+    background-image: url(../img/kv-img/bg-team/背景1_06.png);
+    backface-visibility: hidden;
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+    display: block;
+}
+#image > .i7 {
+position: absolute;
+    transform-style: preserve-3d;
+    width: 129px;
+    height: 1170px;
+    background-image: url(../img/kv-img/bg-team/背景1_07.png);
+    backface-visibility: hidden;
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+    display: block;
+}
+#image > .i8 {
+position: absolute;
+    transform-style: preserve-3d;
+    width: 129px;
+    height: 1170px;
+    background-image: url(../img/kv-img/bg-team/背景1_08.png);
+    backface-visibility: hidden;
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+    display: block;
+}
+#image > .i9{
+position: absolute;
+    transform-style: preserve-3d;
+    width: 129px;
+    height: 1170px;
+    background-image: url(../img/kv-img/bg-team/背景1_09.png);
+    backface-visibility: hidden;
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+    display: block;
+}
+#image > .i10{
+position: absolute;
+    transform-style: preserve-3d;
+    width: 129px;
+    height: 1170px;
+    background-image: url(../img/kv-img/bg-team/背景1_10.png);
+    backface-visibility: hidden;
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+    display: block;
+}
+#image > .i11{
+position: absolute;
+    transform-style: preserve-3d;
+    width: 129px;
+    height: 1170px;
+    background-image: url(../img/kv-img/bg-team/背景1_11.png);
+    backface-visibility: hidden;
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+    display: block;
+}
+
+#image > .i12{
+position: absolute;
+    transform-style: preserve-3d;
+    width: 129px;
+    height: 1170px;
+    background-image: url(../img/kv-img/bg-team/背景1_12.png);
+    backface-visibility: hidden;
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+    display: block;
+}
+#image > .i13{
+position: absolute;
+    transform-style: preserve-3d;
+    width: 129px;
+    height: 1170px;
+    background-image: url(../img/kv-img/bg-team/背景1_13.png);
+    backface-visibility: hidden;
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+    display: block;
+}
+#image > .i14{
+position: absolute;
+    transform-style: preserve-3d;
+    width: 129px;
+    height: 1170px;
+    background-image: url(../img/kv-img/bg-team/背景1_14.png);
+    backface-visibility: hidden;
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+    display: block;
+}
+#image > .i15{
+position: absolute;
+    transform-style: preserve-3d;
+    width: 129px;
+    height: 1170px;
+    background-image: url(../img/kv-img/bg-team/背景1_15.png);
+    backface-visibility: hidden;
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+    display: block;
+}
+#image > .i16{
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 129px;
+    height: 1170px;
+    background-image: url(../img/kv-img/bg-team/背景1_16.png);
+    backface-visibility: hidden;
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+    display: block;
+}
+#image > .i17{
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 129px;
+    height: 1170px;
+    background-image: url(../img/kv-img/bg-team/背景1_17.png);
+    backface-visibility: hidden;
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+    display: block;
+}
+#image > .i18{
+position: absolute;
+    transform-style: preserve-3d;
+    width: 129px;
+    height: 1170px;
+    background-image: url(../img/kv-img/bg-team/背景1_18.png);
+    backface-visibility: hidden;
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+    display: block;
+}
+
+#image > .i19{
+position: absolute;
+    transform-style: preserve-3d;
+    width: 129px;
+    height: 1170px;
+    background-image: url(../img/kv-img/bg-team/背景1_19.png);
+    backface-visibility: hidden;
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+    display: block;
+}
+
+#image > .i20{
+position: absolute;
+    transform-style: preserve-3d;
+    width: 129px;
+    height: 1170px;
+    background-image: url(../img/kv-img/bg-team/背景1_20.png);
+    backface-visibility: hidden;
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+    display: block;
+}

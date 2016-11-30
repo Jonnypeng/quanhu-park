@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title></title>
+<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/water-reset.css">
+<link rel="stylesheet" href="css/water-style.css">
+<link rel="stylesheet" href="css/index.css">
+<script src="js/jquery.min.js"></script>
+<style>
+</style>
+</head>
+<body>
+<img id="wx_logo" src="img/logo300.jpg" alt="" style="position:absolute;margin:0px auto;width:0px;height:0px">
+<div id="preload">
+	<div class="percent">
+		<div class="percent__inner">
+			<div id="start" class="percent__num" style="display:block">
+			</div>
+			<div id="loading" class="rotateZ">
+				<i class="fa fa-spinner"></i>
+			</div>
+		</div>
+	</div>
+	<img id="coverImg" src="img/loading-bg.png">
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" style="display: none;">
+		<symbol id="wave">
+		<path d="M420,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C514,6.5,518,4.7,528.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H420z"></path>
+		<path d="M420,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C326,6.5,322,4.7,311.5,2.7C304.3,1.4,293.6-0.1,280,0c0,0,0,0,0,0v20H420z"></path>
+		<path d="M140,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C234,6.5,238,4.7,248.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H140z"></path>
+		<path d="M140,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C46,6.5,42,4.7,31.5,2.7C24.3,1.4,13.6-0.1,0,0c0,0,0,0,0,0l0,20H140z"></path>
+		</symbol>
+	</svg>
+	<div id="page" class="page page_animated">
+		<div id="water" class="water">
+			<svg viewBox="0 0 560 20" class="water__wave water__wave_back">
+				<use xlink:href="#wave"></use>
+			</svg>
+			<svg viewBox="0 0 560 20" class="water__wave water__wave_front">
+				<use xlink:href="#wave"></use>
+			</svg>
+			<div class="water__inner">
+				<div class="bubble bubble_1"></div>
+				<div class="bubble bubble_2"></div>
+				<div class="bubble bubble_3"></div>
+			</div>
+		</div>
+	</div>	
+</div>
+<div id="light">
+	<div id="black"></div>		
+	<img id="zhiwenImg" src="img/hd/zhiwen/zhiwen0.png" alt="">		
+	<img id="titleImg" src="img/hd/wz.png" alt="">
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+var images = new Array()
+	var num = 100 ;
+	function preload() {
+		for (i = 0; i < preload.arguments.length; i++) {
+			images[i] = new Image()
+				images[i].src = preload.arguments[i]
+		}
+	}
+preload(
+		"img/kv-img/bg-team/bj1_01.png",
+		"img/kv-img/bg-team/bj1_02.png",
+		"img/kv-img/bg-team/bj1_03.png",
+		"img/kv-img/bg-team/bj1_04.png",
+		"img/kv-img/bg-team/bj1_05.png",
+		"img/kv-img/bg-team/bj1_06.png",
+		"img/kv-img/bg-team/bj1_07.png",
+		"img/kv-img/bg-team/bj1_08.png",
+		"img/kv-img/bg-team/bj1_09.png",
+		"img/kv-img/bg-team/bj1_10.png",
+		"img/kv-img/bg-team/bj1_11.png",
+		"img/kv-img/bg-team/bj1_12.png",
+		"img/kv-img/bg-team/bj1_13.png",
+		"img/kv-img/bg-team/bj1_14.png",
+		"img/kv-img/bg-team/bj1_15.png",
+		"img/kv-img/bg-team/bj1_16.png",
+		"img/kv-img/bg-team/bj1_17.png",
+		"img/kv-img/bg-team/bj1_18.png",
+		"img/kv-img/bg-team/bj1_19.png",
+		"img/kv-img/bg-team/bj1_20.png",
+		"img/kv-img/bg-element/pfw_01.png",
+		"img/kv-img/bg-element/pfw_02.png",
+		"img/kv-img/bg-element/pfw_03.png",
+		"img/kv-img/bg-element/pfw_04.png",
+		"img/kv-img/bg-element/pfw_05.png",
+		"img/kv-img/bg-element/pfw_06.png",
+		"img/kv-img/bg-element/pfw_07.png",
+		"img/kv-img/bg-element/pfw_08.png",
+		"img/kv-img/bg-element/pfw_09.png",
+		"img/kv-img/bg-element/pfw_10.png",
+		"img/kv-img/bg-element/pfw_11.png",
+		"img/kv-img/bg-element/pfw_12.png",
+		"img/kv-img/bg-element/pfw_13.png",
+		"img/kv-img/bg-element/pfw_14.png",
+		"img/kv-img/bg-element/pfw_15.png",
+		"img/kv-img/bg-element/pfw_16.png",
+		"img/kv-img/bg-element/pfw_17.png",
+		"img/kv-img/bg-element/pfw_18.png",
+		"img/kv-img/bg-element/pfw_19.png",
+		"img/kv-img/bg-element/pfw_20.png",
+		"img/hd/bj.jpg",
+		"img/hd/sw1.png",
+		"img/hd/sw2.png",
+		"img/hd/sw3.png",
+		"img/hd/sw4.png",
+		"img/hd/sw5.png",
+		"img/hd/sw6.png",
+		"img/hd/sw7.png",
+		"img/hd/sw8.png",
+		"img/hd/sw9.png",
+		"img/hd/sw10.png",
+		"img/hd/wz.png",
+		"img/hd/xl.png",
+		"img/hd/zhiwen/zhiwen0.png",
+		"img/hd/zhiwen/zhiwen1.png",
+		"img/hd/zhiwen/zhiwen2.png",
+		"img/hd/zhiwen/zhiwen3.png",
+		"img/hd/sw1.jpg",
+		"img/loading-bg.png",
+		"img/map.jpg"
+		)
+		window.onload = function (){
+			$("#loading").css({"display":"none"});
+			$("#start").css({"display":"inline-block"});
+			$(".percent").css({"border":"1px solid #29b5af"});
+			var waterUp = setInterval(function (){
+					num-=0.3;
+					$(".water").css({"transform":"translate(0," + num + "%)","webkit-transform":"translate(0," + num + "%)"}) 
+					$("#start").html(Math.round(100-num) + "%");
+					if(num <= 0){
+					clearInterval(waterUp);
+					$("#preload").fadeOut();	
+					};
+					},10)
+		$("#zhiwenImg").on("click",function (){
+			$("#black").slideUp(6000);
+			setTimeout(function(){
+				window.open("kv.html","_self");
+			},6000);
+		});
+		};
+
+</script>
+</body>
+</html>

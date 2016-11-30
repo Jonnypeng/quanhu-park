@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>测试服务</title>
+<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/water-reset.css">
+<link rel="stylesheet" href="css/water-style.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+body{
+	margin:0px;
+}
+img{
+	width:100%;
+	height:auto;
+}
+.container{
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+}
+.bg,.line,.photo,.sw{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+}
+
+.bg{
+	background:url(img/hd/bj.jpg) no-repeat center center;
+	background-size:100% 100%;
+}
+/*.line{
+background:url(img/hd/xl.png) no-repeat center center;
+background-size:100% 100%;
+}*/
+
+#sw1{
+	background:url(img/hd/sw1.png) no-repeat center center;
+	background-size:100% 100%;
+}
+#sw1{
+	background:url(img/hd/sw1.png) no-repeat center center;
+	background-size:100% 100%;
+}
+#sw2{
+	background:url(img/hd/sw2.png) no-repeat center center;
+	background-size:100% 100%;
+}
+#sw3{
+	background:url(img/hd/sw3.png) no-repeat center center;
+	background-size:100% 100%;
+}
+#sw4{
+	background:url(img/hd/sw4.png) no-repeat center center;
+	background-size:100% 100%;
+}
+#sw5{
+	background:url(img/hd/sw5.png) no-repeat center center;
+	background-size:100% 100%;
+}
+#sw6{
+	background:url(img/hd/sw6.png) no-repeat center center;
+	background-size:100% 100%;
+}
+#sw7{
+	background:url(img/hd/sw7.png) no-repeat center center;
+	background-size:100% 100%;
+}
+#sw8{
+	background:url(img/hd/sw8.png) no-repeat center center;
+	background-size:100% 100%;
+}
+#sw9{
+	background:url(img/hd/sw9.png) no-repeat center center;
+	background-size:100% 100%;
+}
+#sw10{
+	background:url(img/hd/sw10.png) no-repeat center center;
+	background-size:100% 100%;
+}
+#zhiwen{
+	position: absolute;
+	z-index: 7;
+	width: 15%;
+	left: 42.5%;
+	bottom: 15%;
+}
+.title{
+	position: absolute;
+	width: 30%;
+	left: 35%;
+	bottom: 4%;
+}
+.black{
+	-webkit-filter:brightness(20%);
+}
+.sw{
+	-webkit-transform:scale(0);	
+	transition:-webkit-transform 2s;
+}
+</style>
+</head>
+<body>
+<img id="wx_logo" src="img/logo300.jpg" alt="" style="position:absolute;margin:0px auto;width:0px;height:0px">
+<audio id="audio" src="audio/music.mp3" loop="loop"></audio>
+<div class="container">
+	<div class="bg black"></div>
+	<!--<div class="line">
+	</div>-->
+	<div class="photo">
+		<div id="sw1" class="sw"></div>
+		<div id="sw2" class="sw"></div>
+		<div id="sw3" class="sw"></div>
+		<div id="sw4" class="sw"></div>
+		<div id="sw5" class="sw"></div>
+		<div id="sw6" class="sw"></div>
+		<div id="sw7" class="sw"></div>
+		<div id="sw8" class="sw"></div>
+		<div id="sw9" class="sw"></div>
+		<div id="sw10" class="sw"></div>			
+	</div>
+	<div id="zhiwen">
+		<img id="zhiwenImg" src="img/hd/zhiwen/zhiwen0.png" alt="">		
+	</div>
+	<div class="title">
+		<img src="img/hd/wz.png" alt="">	
+	</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+var audio = document.getElementById('audio');
+audio.play();
+var num = 0;
+var srcUrl = "img/hd/zhiwen/zhiwen";
+setInterval(function(){
+		num+=1;
+		if(num>3){
+		num=0;
+		}
+		document.getElementById("zhiwenImg").src = srcUrl + num + ".png";
+		},500);	
+</script>
+<script>
+$(document).ready(function(){
+		var brightNum = 21;
+		$("#zhiwen").on("click",function (){
+												$(".sw").css({"-webkit-transform":"scale(1)"});
+													setTimeout(function (){
+														var bright = setInterval(function (){
+															brightNum+=1;
+															if(brightNum>100){
+															clearInterval(bright);	
+															setTimeout(function (){
+																$(".sw").css({"-webkit-transform":"scale(0)"});
+																setTimeout(function (){
+																		window.open("kv.html","_self");
+																	},2000);  //过渡时间为2秒
+																},30);
+															}
+															$(".bg").css({"-webkit-filter":"brightness(" + brightNum + "%)"});
+															},30);
+														},2000);
+});
+});
+</script>
+</body>
+</html>

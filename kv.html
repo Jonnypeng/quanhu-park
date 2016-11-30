@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title></title>
+<link rel="stylesheet" href="css/3d-style.css">
+<style>
+.image{
+	color:gray;
+	font-size:5rem;
+}
+</style>
+</head>
+<body>
+<img id="wx_logo" src="img/logo300.jpg" alt="" style="position:absolute;margin:0px auto;width:0px;height:0px">
+<audio id="audio" src="audio/music.mp3" loop="loop"></audio>
+<div id="wrapper">
+	<div id="touch">
+		<img src="img/kv-img/bq.png" alt="">
+		<div id="point" class="ripper"></div>
+	</div>		
+	<div id="image">
+		<div class="image i1">
+			<img src="img/kv-img/bg-element/pfw_01.png" class="imageElement">
+		</div>
+		<div class="image i2">
+			<img src="img/kv-img/bg-element/pfw_10.png" class="imageElement">
+		</div>
+		<div class="image i3">
+			<img src="img/kv-img/bg-element/pfw_19.png" class="imageElement">
+		</div>
+		<div class="image i4">
+			<img src="img/kv-img/bg-element/pfw_08.png" class="imageElement">
+		</div>
+		<div class="image i5">
+			<img src="img/kv-img/bg-element/pfw_17.png" class="imageElement">
+		</div>
+		<div class="image i6">
+			<img src="img/kv-img/bg-element/pfw_06.png" class="imageElement">
+		</div>
+		<div class="image i7">
+			<img src="img/kv-img/bg-element/pfw_15.png" class="imageElement">
+		</div>
+		<div class="image i8">
+			<img src="img/kv-img/bg-element/pfw_04.png" class="imageElement">
+		</div>
+		<div class="image i9">
+			<img src="img/kv-img/bg-element/pfw_13.png" class="imageElement">
+		</div>
+		<div class="image i10">
+			<img src="img/kv-img/bg-element/pfw_02.png" class="imageElement">
+		</div>
+		<div class="image i11">
+			<img src="img/kv-img/bg-element/pfw_11.png" class="imageElement">
+		</div>
+		<div class="image i12 end">
+			<img src="img/kv-img/bg-element/pfw_20.png" class="imageElement">
+		</div>
+		<div class="image i13">
+			<img src="img/kv-img/bg-element/pfw_09.png" class="imageElement">
+		</div>
+		<div class="image i14">
+			<img src="img/kv-img/bg-element/pfw_18.png" class="imageElement">
+		</div>
+		<div class="image i15">
+			<img src="img/kv-img/bg-element/pfw_07.png" class="imageElement">
+		</div>
+		<div class="image i16">
+			<img src="img/kv-img/bg-element/pfw_16.png" class="imageElement">
+		</div>
+		<div class="image i17">
+			<img src="img/kv-img/bg-element/pfw_05.png" class="imageElement">
+		</div>
+		<div class="image i18">
+			<img src="img/kv-img/bg-element/pfw_14.png" class="imageElement">
+		</div>
+		<div class="image i19">
+			<img src="img/kv-img/bg-element/pfw_03.png" class="imageElement">
+		</div>
+		<div class="image i20">
+			<img src="img/kv-img/bg-element/pfw_12.png" class="imageElement">
+		</div>
+	</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+var audio = document.getElementById('audio');
+audio.play();
+var images = new Array()
+	var num = 100 ;
+	function preload() {
+		for (i = 0; i < preload.arguments.length; i++) {
+			images[i] = new Image()
+				images[i].src = preload.arguments[i]
+		}
+	}
+preload(
+		"img/dt/slide/bai.png",
+		"img/dt/slide/kong.png",
+		"img/dt/slide/long.png",
+		"img/dt/slide/san.png",
+		"img/dt/slide/shang.png",
+		"img/dt/slide/shui.png",
+		"img/dt/slide/shuiyu.png",
+		"img/dt/slide/wen.png",
+		"img/dt/slide/yun.png",
+		"img/dt/slide/zhuo.png",
+		"img/dt/an.png",
+		"img/dt/bj.jpg",
+		"img/dt/lkt.png",
+		"img/dt/xl1.png",
+		"img/dt/xl2.png"
+		)
+	$(document).ready(function (){
+			$("#touch").on("click",function (){
+					window.open("content.html#shui","_self");	
+				});
+			});
+</script>
+</body>
+</html>
